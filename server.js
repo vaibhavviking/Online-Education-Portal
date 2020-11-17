@@ -1807,9 +1807,9 @@ app.get('/student_request_course', (req, res) => {
         //         let info=req.query.info;
         //         load_request_list(req,res,info,error);
         //     }else{
+        //         res.render('student_request_course.ejs', { error: "Cannot Request Course During Semester" });
         //     }
         // })
-        // res.render('student_request_course.ejs', { error: "Cannot Request Course During Semester" });
         let error = req.query.error;
         let info=req.query.info;
         load_request_list(req,res,info,error);
